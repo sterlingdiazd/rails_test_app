@@ -94,5 +94,5 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
-  RAILS_MASTER_KEY=cee301dc8ba60eacc8a83991fb5558f8
+  secret_key_base=cee301dc8ba60eacc8a83991fb5558f8
 end
