@@ -2,8 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.0.0"
 
+gem 'rake'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.3"
+gem 'rails', '~> 7.1.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -38,6 +39,8 @@ gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "jsbundling-rails"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -68,6 +71,8 @@ group :test do
   gem "selenium-webdriver"
 end
 
-# group :production do
-#    gem 'pg'
-# end
+group :production do
+   gem 'pg'
+end
+
+gem "cssbundling-rails", "~> 1.4"
